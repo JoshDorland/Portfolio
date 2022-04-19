@@ -1,39 +1,86 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link rel="shortcut icon" href="icon.png">
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Josh's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class = "logo">
+                <img src="" alt="">
+            </div>
 
+            <button class = "nav-toggle" aria-label="toggle navigation">
+                <span class = "hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class="nav__list">
+                    <li class="nav__item"></li><a href="#projects" class = "nav__link">Projects</a></li> 
+                    <li class="nav__item"></li><a href="#about" class = "nav__link">About</a></li>
+                    <li class="nav__item"></li><a href="#contact" class = "nav__link">Contact</a></li>    
+                </ul>
+            </nav>
+        </header>
 
+        <!--Introduction-->
+        <section class="intro" id = "home">
+            <h1 class = "section__title section__title--intro">
+                Hi I am <strong>Josh Dorland</strong>
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">Computer Engineering Student</p>
 
-<!-- Change the text to your name below-->
-<title>Your Name Here </title>
-<style>
-</style>
+        </section>
 
-</head>
-<body>
-<div class="wrapper">
+        <!--Projects-->
+        <section class = "my-projects" id = "projects">
+            <h2 class = "section__title section__title--services">My Projects</h2>
+            <div class = "projects">
+                <div class = "project1">
+                    <a href = "#" class="portfolio__item">
+                        <img src="Images/testImage.png" alt="" class="portfolio__img">
+                    </a>
+                </div>
 
-<div class="prof-box">
-<iframe src="https://giphy.com/embed/3o751Sq3f0eeLjQB0Y" width="300" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
-<!-- Change the text to your name and your school below-->
- <h1>Your name here</h1>
- <h5>Student at X School</h5>
-<div class="line-break"></div>
+                <div class = "project2">
+                    <a href = "#" class="portfolio__item">
+                        <img src="Images/testImage.png" alt="" class="portfolio__img">
+                    </a>
+                </div>
 
- <p> Write a mini bio here </p>
- <p><a href = ""> Resume here</a></p>
+                <div class = "project3">
+                    <a href = "#" class="portfolio__item">
+                        <img src="Images/testImage.png" alt="" class="portfolio__img">
+                    </a>
+                </div>
+            </div> <!--Close Projects-->
+        </section>
 
- <div class="social-icons">
+        <!--About-->
+        <section class = "about-me" id="about">
+            <h2 class ="section__title section__title--about">Josh Dorland</h2>
+            <p class = "section__subtitle section__subtitle--about">Description of me</p>
 
- <!-- include your social media links by changing the URL on the text that says CHANGE ME here -->
-  <a href="CHANGE ME" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-  <a href="CHANGE ME" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-<a href="CHANGE ME" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-</div>
- </div>
-</div>
+            <div class="about-me__body">
+                <p></p>
+                <p></p>
+            </div>
 
-</body>
+            <img src="" alt="">
+        </section>
+
+        <!--Contact-->
+        <section class = "contact-me" id="contact">
+            <h2 class = "section__title">Contact Me</h2>
+            <p class = "section__subtitle"></p>
+
+            <a href="mailto:joshdorland@icloud.com" class = "email__link">joshdorland@icloud.com</a>
+            <ul class = "social-list">
+                <li class = "social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/joshdorland/">Linkedin</a></li>
+                <li class = "social-list__item"><a class="social-list__link" href="https://github.com/JoshDorland">Github</a></li>
+            </ul>
+        </section>
+    </body>
 </html>
