@@ -242,7 +242,7 @@ header{
 
 /* Project Button*/
 .btn {
-    font-weight: 600;
+    font-weight: 300;
     line-height: 50px;
     height: 50px;
     text-align: center;
@@ -299,5 +299,5 @@ header{
     transform: scale(0.1, 1);
   }
 
-  
+
 
