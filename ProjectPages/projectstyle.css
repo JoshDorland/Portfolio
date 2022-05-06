@@ -109,6 +109,14 @@ header{
     transform: 0.3s all linear;
 }
 
+home-button{
+    position: fixed;
+    top: 3rem;
+    left: 13rem;
+    width: 100%;
+    z-index: 100;
+}
+
 /* Home */
 .home{
     min-height: 600px;
@@ -161,85 +169,55 @@ header{
 }
 
 .social .bx:hover{
-    color: var(--main-color);
+    color: var(--body-color);
     background: var(--bg-color);
     transition: 0.3 all linear;
 }
 
-/* Project Image CSS */
-.container-all{
-    width: fit-content;
-    margin: 20px auto;
-    padding-top: 7.0rem;
-    height: auto;
-  }
-  .container{
-    width: calc(33% - 6px);
-    overflow:hidden;
-    height: fit-content;
-    margin:3px;
-    padding: 0;
-    display:block;
-    position:relative;
-    float:left;
-  }
-  img{
+/* Projects */
+.projects-content{
+    display: grid;
+    padding-top: 10rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.projects-box{
+    position: relative;
     width: 100%;
-    transition-duration: .3s;
-    max-width: 100%;
-    display:block;
-    overflow:hidden;
-    cursor:pointer;
-  }
-  .title{
-    position:absolute;
-    display:block;
-    cursor:pointer;
-    top: 35%;
-    display: none;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 1.6em;
-    text-shadow: 1px 5px 10px black;
-    transition-duration: .3s;
-  }
-  .text{
-    position:absolute;
-    top: 70%;
-    cursor:pointer;
-    max-width: 80%;
-    text-align:center;
-    left: 50%;
-    text-shadow: 1px 5px 10px black;
-    font-size: 1em;
-    display:none;
-    margin-right: -50%;
-    transition-duration: .3s;
-    transform: translate(-50%, -50%) 
-  }
-  .container:hover img{
-    transform: scale(1.2);
-    transition-duration: .3s;
-    filter: grayscale(50%);
-    opacity: .7;
-  }
-  .container:hover span{
-    color:white;
-    display: block;
-    transition-duration: .3s;
-  }
-  @media only screen and (max-width: 900px) {
-      .container {
-          width: calc(50% - 6px);
-      }
-  }
-  @media only screen and (max-width: 400px) {
-      .container {
-          width: 100%;
-      }
-  }
+    height: 100%;
+    border-radius: 0rem;
+    overflow: hidden;
+}
+
+.projects-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-container .bx{
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 100%;
+    color: var(--bg-color);
+    background: var(--container-color);
+}
+
+.home-container .bx:hover{
+    color: var(--body-color);
+    background: var(--bg-color);
+    transition: 0.3 all linear;
+}
+
+/* Project Description */
+.description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3.4rem;
+}
 
 /* Footer */
 .footer{
@@ -249,4 +227,5 @@ header{
     row-gap: 1.4rem;
     padding: 3.4rem 0;
 }
+
 
