@@ -166,94 +166,80 @@ header{
     transition: 0.3 all linear;
 }
 
-/* Projects */
-.projects-content{
-    display: grid;
-    padding-top: 10rem;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.projects-box{
-    position: relative;
-    width: 100%;
-    height: 320px;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.projects-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.projects-overlay{
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(0, 0%, 98%, 0.7);
-}
-
-.projects-overlay h2{
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 10px;    
-}
-
-.project-overlay h3{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 5px;
-}
-
-.projects-overlay bx{
-    font-size: 24px;
-    padding: 10px;
-    background: var(--main-color);
-    color: var(--main-color);
-    border-radius: 4px;
-}
-
-.projects-overlay .bx:hover {
-    background: var(--container-color);
-    transition: 0.3s all linear;
-}
-
-.projects-box:hover .projects-overlay{
-    top: 0;
-    transition: 0.3s all ease;
-}
-
-.viewButton {
-    background-color: transparent; 
-    border: none;
-    color: var(--main-color);
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 4px 2px;
-    transition-duration: 0.5s;
-    cursor: pointer;
+/* Project Image CSS */
+.container-all{
+    width: fit-content;
+    margin: 20px auto;
+    padding-top: 7.0rem;
+    height: auto;
   }
-
-.viewButton1 {
-    transition-duration: 0.5s;
-}
-  
-.viewButton1:hover {
-    background-color: var(--bg-color); /* Green */
-    color: white;
-}
+  .container{
+    width: calc(33% - 6px);
+    overflow:hidden;
+    height: fit-content;
+    margin:3px;
+    padding: 0;
+    display:block;
+    position:relative;
+    float:left;
+  }
+  img{
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+  }
+  .title{
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+  .text{
+    position:absolute;
+    top: 70%;
+    cursor:pointer;
+    max-width: 80%;
+    text-align:center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 1em;
+    display:none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%) 
+  }
+  .container:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .7;
+  }
+  .container:hover span{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+  }
+  @media only screen and (max-width: 900px) {
+      .container {
+          width: calc(50% - 6px);
+      }
+  }
+  @media only screen and (max-width: 400px) {
+      .container {
+          width: 100%;
+      }
+  }
 
 /* Footer */
 .footer{
@@ -263,5 +249,4 @@ header{
     row-gap: 1.4rem;
     padding: 3.4rem 0;
 }
-
 
