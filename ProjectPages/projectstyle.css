@@ -57,7 +57,7 @@ header{
 }
 
 .header-active{
-    background: var(--box-color);
+    background: var(--body-color);
     transition: 0.4s; 
 }
 
