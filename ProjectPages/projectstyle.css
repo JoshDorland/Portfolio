@@ -228,4 +228,19 @@ home-button{
     padding: 3.4rem 0;
 }
 
+/* Gallery */
+.gallery{
+    padding-top: 9rem;
+    margin: 10px 50px;
+}
 
+.gallery img{
+    width: 230px;
+    height: 180px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+}
