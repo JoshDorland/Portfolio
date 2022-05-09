@@ -42,7 +42,7 @@ li{
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1700px;
     margin: auto;
     width: 100%;
 }
@@ -214,9 +214,12 @@ home-button{
 /* Project Description */
 .description{
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 3.4rem;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: large;
+    font-weight: 500;
 }
 
 /* Footer */
@@ -230,15 +233,19 @@ home-button{
 
 /* Gallery */
 .gallery{
+    justify-content: center;
+    align-items: center;
     padding-top: 9rem;
-    margin: 10px 50px;
+    margin: 20px 50px;
+    
 }
 
 .gallery img{
-    width: 230px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     padding: 5px;
-    transition: 1s;
+    transition: 0.75s;
+    border-radius: 0.75rem; 
 }
 
 .gallery img:hover{
