@@ -51,8 +51,16 @@
 
     <section class="description container" id="description">
         <p>
-            This is where the text will go that will descibe the project that was completed. This will be changed during the project and as tasks
-            are completed. For example, this will house the BSPD circuit board project description.
+            The FSAE 2022 competition requires a standalone device that is able to test the functionality of the brake system plausabibilty device. This includes the vehicles brake pedal
+            sensor, accelerator pedal sensors, and the high voltage current sensor as well as testing EV.8.7.3 which requires the BSPD opens the shutdown circuit when hard braking + 5kW
+            of electrical power is delivered to the motors. The BSPD Test Board is power by 2 18650 batteries in series which can provide 8.4V and 3A for the entire circuit. This 
+            is fed into a 5V LDO regulator due to the extremely close input voltage only needing to be around 5.6V. The 5V regulator supplies the rest of the board as well as a 3.3V LDO regulator.
+            Linear potentiometers are used in a rheostat setup in order to provide a test voltage that is sent directly to the BSPD on the front controller. This test value is also sent 
+            into window comparators in order to drive the LED circuitry for easy indication of open circuit, short circuit, and nominal operation test conditions. This functionality is provided
+            for the brake pedal sensor, accelerator pedal sensors, and the high voltage current sensor. Multiple voltage dividors using low tolerance resistors are used for the references
+            of the window comparator LED circuit. The second function of the board is to verify EV.8.7.3. When the vehicle draws 5kW of power the high voltage current sensor will read around 10A. 
+            Using a 2A constat current LED driver which acts as an external buck converter, the driver supplies 2A of current to a 2A LED as the "load". I decided to have two connectors that 
+            are hooked into an external wire which is able to loop around the high voltage current sensor 5 times to simulate or spoof 10A worth of current. The circuit board was created using Altium Designer.
         </p>
     </section>
 
