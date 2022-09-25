@@ -1,83 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Portfolio</title>
-    <!--Link to CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Box Icons-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh Dorland Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="nav container">
-            <!-- Logo -->
-            <h1 class="logo">Josh Dorland</h1>
-            <!-- Navbar-->
-                <ul class="navbar">
-                    <h3>Computer Engineering | McMaster Univeristy</h3>
-                    <p>Electrical team member on MAC Formula Electric</p>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-name">Josh Dorland</h1>
+    </div>
+  </section>
 
-                    <!--<li><a href="#home" class="nav-link">Home</a></li>-->
-                    <!--<li><a href="#about" class="nav-link">About</a></li>-->
-                    <!--<li><a href="#projects" class="nav-link">Projects</a></li>-->
-                    <!--<li><a href="#contact" class="nav-link">Contact</a></li>-->
-                </ul>
+  <!--Used for Socials-->
+  <aside class="sidebar">
+    <nav class="nav">
+      <ul>
+        <li class="email-extra"><a href="mailto: joshdorland@icloud.com">Email</a></li>
+        <li><a href="https://drive.google.com/file/d/15ZsH7fGvfsCoaWBD5G8l4wgW7Furitir/view?usp=sharing" target="_blank">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/joshdorland/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/JoshDorland" target="_blank">GitHub</a></li>
+          <!--<li><a href="#">MAC Formula Electric</a></li>-->
+      </ul>
+    </nav>
+  </aside>
+  
+  <section class="projects-section">
+    <div class="project-content">
+      <div class="projects">
+        <div class="placeholder1">
+        <div class="project">
+          <img src="images/BSPD Test Board Final_Beauty.png" alt="">
+          <div class="project-text">
+            <h4>BSPD Test Board</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt 
+              nec tortor in tristique. Suspendisse viverra tincidunt ullamcorper. 
+            </p>
+            <button class="button" style="vertical-align:middle"><span>View Project</span></button>
+          </div>
         </div>
-    </header>
-
-    <script src="/js/script.js"></script>
-
-    <!-- Home -->
-    <!--<section class="home" id="home container">
-        <div class="home-content">
-            <div class="home-text">
-            </div>
         </div>
-    </section>-->
-    <!--Projects-->
-    <section class="projects container" id="projects">
-        <!--Heading-->
-        <!--<h2 class="heading">Projects</h2>-->
-        <!-- Projects Content-->
+
+        <div class="project">
+          <img src="images/project-image/bspd/BSPD Test Board Final_Beauty.png" alt="">
+          <div class="project-text">
+            <h4>BSPD Test Board</h4>
+            <p>This board was created for the MACEV3 and MACEV4 electric vehicle to test brake sensors, accelerator sensors, and 
+              other safety features.  
+            </p>
+            <button class="button" style="vertical-align:middle" onclick='window.location.href = "projects/bspd.html"'><span>View Project</span></button>
+          </div>
+        </div>
         
-        
-        <div class="projects-content">
-
-
-            <div class="projects-box">
-                <img src="Project-Images/BSPD/BSPD Test Board Final_Beauty.png" alt="" class="projects-img">
-                <!-- Overlay -->
-                <div class="projects-overlay">
-                    <h2>BSPD Test Board</h2>
-                    <a href="Project-Pages/BSPDproject.html" class="viewButton viewButton1">Click Here To View Project</a>
-                </div>
+        <div class="placeholder2">
+        <div class="project">
+          <img src="images/BSPD Test Board Final_Beauty.png" alt="">
+          <div class="project-text">
+            <h4>BSPD Test Board</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt 
+              nec tortor in tristique. Suspendisse viverra tincidunt ullamcorper. 
+            </p>
+            <button class="button" style="vertical-align:middle"><span>View Project</span></button>
             </div>
-
-            <!--Template...Also Change in style.css line 173 from repeat(#, 1fr);-->
-            <!--<div class="projects-box">
-                <img src="Project-Images/temporary.png" alt="" class="projects-img">
-                <div class="projects-overlay">
-                    <h2>Coming Soon</h2>
-                </div>
-            </div>-->
+          </div>
         </div>
-    </section>
 
-    
-    <!--Footer-->
-    <section class="footer container" id="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/joshdorland/" target="_blank"><i class='bx bxl-linkedin'  ></i></a>
-            <a href="https://github.com/JoshDorland" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="mailto:joshdorland@icloud.com"><i class='bx bx-envelope'></i></a>
-            <a href="https://macformularacing.com/" target="_blank"><img src="images/MACFELogoResized.png"></i></a>
-        </div>
-    </section>
+        
+      </div>
+
+      </div>
+      
+    </div>
+  </section>
 </body>
-
 </html>

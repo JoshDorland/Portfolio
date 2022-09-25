@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSPD Test Board</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+          <h1 class="hero-name">BSPD Test Board</h1>
+        </div>
+    </section>
+
+    <!--Used for Socials-->
+    <aside class="sidebar">
+        <nav class="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="email-extra"><a href="mailto: joshdorland@icloud.com">Email</a></li>
+            <li><a href="https://drive.google.com/file/d/15ZsH7fGvfsCoaWBD5G8l4wgW7Furitir/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/joshdorland/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/JoshDorland" target="_blank">GitHub</a></li>
+            <!--<li><a href="#">MAC Formula Electric</a></li>-->
+        </ul>
+        </nav>
+    </aside>
+
+    <script src="../js/script.js"></script>
+
+    <section class="projects gallery" id="projects-img">
+        <div class="gallery">
+            <a href="../images/project-image/bspd/BSPD_TestBoard_Block.png" data-lightbox="mygallery" data-title="BSPD Test Board Overview"><img src="../images/project-image/bspd/BSPD_TestBoard_Block.png"></a>
+            <a href="../images/project-image/bspd/BSPD_TestBoard_Overview.png" data-lightbox="mygallery" data-title="BSPD Test Board Block Diagram"><img src="../images/project-image/bspd/BSPD_TestBoard_Overview.png"></a>
+            <a href="../images/project-image/bspd/BSPD Test Board Final_Beauty.png" data-lightbox="mygallery" data-title="BSPD Test Board Final Render"><img src="../images/project-image/bspd/BSPD Test Board Final_Beauty.png"></a>
+            <!--<a href="../Project-Images/temporary.png" data-lightbox="mygallery" data-title="Test"><img src="../Project-Images/temporary.png"></a>
+            <a href="../Project-Images/temporary.png" data-lightbox="mygallery" data-title="Test"><img src="../Project-Images/temporary.png"></a>
+            <a href="../Project-Images/temporary.png" data-lightbox="mygallery" data-title="Test"><img src="../Project-Images/temporary.png"></a> -->
+        </div>
+    </section>
+
+    <section class="description container" id="description">
+        <p class="description-text">
+            The FSAE 2022 competition requires a standalone device that is able to test the functionality of the brake system plausabibilty device. This includes the vehicles brake pedal
+            sensor, accelerator pedal sensors, and the high voltage current sensor as well as testing EV.8.7.3 which requires the BSPD opens the shutdown circuit when hard braking + 5kW
+            of electrical power is delivered to the motors. The BSPD Test Board is power by 2 18650 batteries in series which can provide 8.4V and 3A for the entire circuit. This 
+            is fed into a 5V LDO regulator due to the extremely close input voltage only needing to be around 5.6V. The 5V regulator supplies the rest of the board as well as a 3.3V LDO regulator.
+            Linear potentiometers are used in a rheostat setup in order to provide a test voltage that is sent directly to the BSPD on the front controller. This test value is also sent 
+            into window comparators in order to drive the LED circuitry for easy indication of open circuit, short circuit, and nominal operation test conditions. This functionality is provided
+            for the brake pedal sensor, accelerator pedal sensors, and the high voltage current sensor. Multiple voltage dividors using low tolerance resistors are used for the references
+            of the window comparator LED circuit. The second function of the board is to verify EV.8.7.3. When the vehicle draws 5kW of power the high voltage current sensor will read around 10A. 
+            Using a 2A constat current LED driver which acts as an external buck converter, the driver supplies 2A of current to a 2A LED as the "load". I decided to have two connectors that 
+            are hooked into an external wire which is able to loop around the high voltage current sensor 5 times to simulate 10A worth of current. The circuit board was created using Altium Designer.
+        </p>
+    </section>
+</body>
